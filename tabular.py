@@ -18,5 +18,17 @@ if(len(sys.argv) == 2):
     elif(int(option) == 4):
         yval = [np.tan(x) for x in xval]
         
+
+else:
+    print(""""
+    Wrong argument list!!. 
+    Usage:Tabulation.py N where N is a number between from 1 to 4 inclusive.\n
+    N has the following options:
+    1 ---   f(x)\t  2---sin(x) 
+    3 --- cos(x)\t  4--- tan(x**2) 
+
+    """)
+    sys.exit(1)
+
 plt.plot(xval, yval)
 plt.show()
