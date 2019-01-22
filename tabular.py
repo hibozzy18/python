@@ -1,9 +1,10 @@
 from __future__ import print_function
 import sys
-import pylab as pl
+
 import matplotlib
-matplotlib.use("TKAgg")
+matplotlib.use("TkAgg")
 from matplotlib import pyplot as plt
+from matplotlib import pylab as pl
 import numpy as np
 
 xval = [x for x in pl.frange(-3.0, 3.0, 0.1)]
