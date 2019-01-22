@@ -16,5 +16,15 @@ if(len(sys.argv) == 2):
         yval = [x**3 for x in xval]
 
 
+else:
+    print(""""
+    Wrong argument list!!. 
+    Usage: Tabulation.py N  where is option number.\n
+    N has the following options:
+    1 ---   f(x)\t  2 ---   f(x**2) \t 3 ---f(x**3)
+
+    """)
+    sys.exit(1)
+
 plt.plot(xval, yval)
 plt.show()
