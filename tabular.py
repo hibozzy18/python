@@ -6,7 +6,7 @@ matplotlib.use("TKAgg")
 from matplotlib import pyplot as plt
 import numpy as np
 
-xval = [x for x in pl.frange(-5.0, 5.0, 0.1)]
+xval = [x for x in pl.frange(-3.0, 3.0, 0.1)]
 if(len(sys.argv) == 2):
     option = sys.argv[1]
     if(int(option) == 1):
